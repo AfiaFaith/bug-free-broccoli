@@ -5,11 +5,32 @@ import matplotlib.pyplot as plt  # type:ignore
 class Poly2:
     """ Classe permettant de representer un polynôme de degré 2."""
 
-    def __init__(self, *coeffs):
-        """ Méthode constructeur qui prend en paramètre, les coefficients du polynôme"""
+    def __init__(self,p1,p2,p3,a,b,coeffs='2'):
+        self.p1=p1
+        self.p2=p2
+        self.p3=p3
+        self.a=a
+        self.b=b
+ # """ Méthode constructeur qui prend en paramètre, les coefficients du polynôme"""
         pass
 
-    def __add__(self, other):
+    def __add__(self,p1,p2,p3,a,b,):
+       p3=p1+p2
+       p1=a+b
+       
+       
+    def set_poly(self):
+        self.a = int(input('entrez les donnees de a'))
+        self.b= int(input('Entrer les donnees de b'))
+        
+        print(p1*2)
+    
+        
+if __name__ == '__main__':
+    work = Poly2('p1','p2','p3','a','b',coeffs='2')
+    work.set_poly()
+    print(work)
+    
         """Addition 2 polynômes et qui renvoi du nouveau polynôme"""
         pass
 
